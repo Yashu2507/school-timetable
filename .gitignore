@@ -1,0 +1,41 @@
+cd C:\Learning\school-timetable
+
+# Create .gitignore
+@"
+# Maven
+backend/target/
+backend/.mvn/
+!backend/.mvn/wrapper/
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+"@ | Out-File -FilePath .gitignore -Encoding utf8
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
